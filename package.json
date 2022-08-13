@@ -4,8 +4,10 @@
   "author": "Mitchel Rydzynski",
   "private": true,
   "scripts": {
+    "compile": "tsc && npx browserify src/index.ts -v --debug -p tsify -o dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tsc && npx eslint . --ext .ts"
+    "lint": "tsc && npx eslint . --ext .ts",
+    "local-dev": "mkdir -p dist && npx watchify src/index.ts -v --debug -p tsify -o dist/index.js"
   },
   "dependencies": {
     "canvas": "^2.8.0",
