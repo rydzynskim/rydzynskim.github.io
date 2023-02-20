@@ -4,15 +4,8 @@ As the only contributer I guess I'm just documenting this for my own reference.
 
 ### Linting and Prettier
 
-`npm run lint`: lints the ./src directory with airbnb style guide (recommend installing ESLint plugin to see lint errors in browser)  
-`npm run prettier`: fixes code style, (recommend installing Prettier - code formatter plugin and configure format on save)
-
-### Build Pipeline
-
-1. Transpile typescript/tsx to javascript/jsx with typescript compiler
-2. Bundle modules with webpack using babel-loader to handle jsx (among other things)
-
-`npm run build`: creates the build bundle in the ./docs directory
+`npm run lint`: lints the ./src directory with airbnb style guide (recommend installing ESLint plugin to see lint errors in editor)  
+`npm run prettier`: fixes code style (recommend installing Prettier - code formatter plugin and configure format on save)
 
 ### Dev Workflow
 
