@@ -1,16 +1,30 @@
-My personal webpage :)
+## My personal webpage :)
 
-#### Deploying
+As the only contributer I guess I'm just documenting this for my own reference.
 
-Site is hosted on github pages, all changes pushed to master will automatically be live.
+### Linting and Prettier
 
-1. Make sure all current changes are okay
-2. Run `npm run format` to format code with prettier
-3. Run `npm run compile` to build
-4. Commit and push changes to master
+`npm run lint`: lints the ./src directory with airbnb style guide (recommend installing ESLint plugin to see lint errors in browser)  
+`npm run prettier`: fixes code style, (recommend installing Prettier - code formatter plugin and configure format on save)
 
-#### Local Dev
+### Build Pipeline
 
-1. Run `npm run local-dev`
-2. Open index.html in browser
-3. Dev away!
+1. Transpile typescript/tsx to javascript/jsx with typescript compiler
+2. Bundle modules with webpack using babel-loader to handle jsx (among other things)
+
+`npm run build`: creates the build bundle in the ./docs directory
+
+### Dev Workflow
+
+#### For Local Developemnt:
+
+`npm run dev`: builds code for development, opens app in browser, enables hot reloading
+
+#### For Deploying:
+
+1. `npm run prettier` for style fixes
+2. `npm run lint` to make sure no lint errors
+3. `npm run build` to make code work
+4. push to master and changes will be live on github pages
+
+Will eventually have github actions ci handle the above on push to master but this is fine for now.
