@@ -1,10 +1,9 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
-  render() {
-    return <div>currently in development...</div>;
-  }
+function App(): React.ReactElement {
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -1,6 +1,6 @@
 ## My personal webpage :)
 
-As the only contributer I guess I'm just documenting this for my own reference.
+As the only contributer, I guess I'm just documenting this for my own reference.
 
 ### Linting and Prettier
 

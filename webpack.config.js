@@ -13,7 +13,6 @@ module.exports = (env) => {
     target: 'web',
     devServer: {
       port: '8080',
-      static: './src',
       open: true,
       hot: true,
       liveReload: true,
@@ -24,6 +23,13 @@ module.exports = (env) => {
           test: /\.(ts|tsx)$/,
           use: ['babel-loader', 'ts-loader'],
         },
+        {
+          test: /\.jpg$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+          },
+        },
       ],
     },
     resolve: {
@@ -32,6 +38,7 @@ module.exports = (env) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
+        favicon: './src/common/images/favicon-32x32.png',
       }),
       new ProgressPlugin(true),
     ],
