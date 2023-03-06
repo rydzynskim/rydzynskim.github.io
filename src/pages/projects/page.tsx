@@ -1,6 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { blue1 } from '../../common/colors';
 
 const useStyles = createUseStyles({
   container: {
@@ -14,7 +13,6 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: '3rem',
-    color: blue1,
   },
   spacer: {
     flex: 1,

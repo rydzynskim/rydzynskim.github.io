@@ -1,7 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import composite from '../../common/images/composite.jpg';
-import { blue1 } from '../../common/colors';
 
 const useStyles = createUseStyles({
   container: {
@@ -18,7 +17,6 @@ const useStyles = createUseStyles({
   textContainer: {
     fontSize: '1.5rem',
     width: '400px',
-    color: blue1,
   },
   spacer: {
     flex: 1,

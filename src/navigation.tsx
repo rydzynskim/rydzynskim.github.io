@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { createUseStyles } from 'react-jss';
-import { blue1, blue2, blue5 } from './common/colors';
+import { black, gray } from './common/colors';
 
 const useStyles = createUseStyles({
   container: {
@@ -9,7 +9,6 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: blue5,
   },
   navContainer: {
     display: 'flex',
@@ -26,26 +25,26 @@ const useStyles = createUseStyles({
   idleNameNav: {
     fontSize: '1.75rem',
     fontWeight: 500,
-    color: blue2,
     textDecoration: 'none',
+    color: gray,
   },
   activeNameNav: {
     fontSize: '1.75rem',
     fontWeight: 800,
-    color: blue1,
     textDecoration: 'none',
+    color: black,
   },
   idleNav: {
     fontSize: '1.25rem',
     fontWeight: 500,
-    color: blue2,
     textDecoration: 'none',
+    color: gray,
   },
   activeNav: {
     fontSize: '1.5rem',
     fontWeight: 800,
-    color: blue1,
     textDecoration: 'none',
+    color: black,
   },
   outletContainer: {
     width: '800px',
