@@ -85,7 +85,7 @@ function Nav(): React.ReactElement {
             PROJECTS
           </NavLink>
           <NavLink
-            to="books"
+            to="reading"
             className={({ isActive }) =>
               isActive ? classes.activeNav : classes.idleNav
             }
