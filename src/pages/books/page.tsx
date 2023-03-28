@@ -31,7 +31,7 @@ const readBookStyles = createUseStyles({
 
 function ReadBook(props: IReadBookProps): React.ReactElement {
   const classes = readBookStyles();
-  const { title, quote, review, img, imgAlt, author } = props;
+  const { title, quote, img, imgAlt, author } = props;
   return (
     <div className={classes.bookContainer}>
       <div className={classes.header}>
@@ -41,15 +41,9 @@ function ReadBook(props: IReadBookProps): React.ReactElement {
         </div>
         <img src={img} alt={imgAlt} height="150" width="100" />
       </div>
-      <div>
-        <div className={classes.info}>
-          <b>Favorite Quote: </b>
-          {quote}
-        </div>
-        <div className={classes.info}>
-          <b>Quick Review: </b>
-          {review}
-        </div>
+      <div className={classes.info}>
+        <b>Favorite Quote: </b>
+        {quote}
       </div>
     </div>
   );
@@ -124,8 +118,6 @@ function Reading(): React.ReactElement {
                  offering even so, and praise God, you who are the only one left. And if there are two of you who come together thus, there is already a whole
                  world, a world of living love; embrace each other in tenderness and give praise to the lord: for his truth has been made full, if only in the
                  two of you." - among the final words of Elder Zosima'
-          review='I decided to read this after a person I respect for book recommendations called it, "possibly the best book ever written." After reading, I cannot
-                  disagree with that sentiment.'
         />
       </div>
       <div className={classes.sectionContainer}>

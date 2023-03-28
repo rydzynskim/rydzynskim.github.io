@@ -1,7 +1,6 @@
 export interface IReadBookProps {
   title: string;
   quote: string;
-  review: string;
   img: any;
   imgAlt: string;
   author: string;
