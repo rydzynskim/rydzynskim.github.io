@@ -67,6 +67,11 @@ function Blog(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.blogsContainer}>
         <BlogPost
+          title="I'm a Quitter"
+          link="https://docs.google.com/document/d/1W47rs_Zi1a9iMhIRT9IlBQzcReL6CW5TBAHksxVnVPU/edit?usp=sharing"
+          description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
+        />
+        <BlogPost
           title="The Incentive Problem"
           link="https://docs.google.com/document/d/1IXiwVmyyNem1cbsGfw8HeZxKDxl5h9YRf7dCzj7cpPM/edit?usp=sharing"
           description="Why are incentives necessary? When do problems arise? Are there potential solutions?"
