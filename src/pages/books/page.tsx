@@ -10,6 +10,7 @@ import theCaptainClass from '../../common/images/theCaptainClass.jpg';
 import atlasShrugged from '../../common/images/atlasShrugged.jpg';
 import theVitalQuestion from '../../common/images/theVitalQuestion.jpg';
 import whatIsLife from '../../common/images/whatIsLife.jpg';
+import moloch from '../../common/images/moloch.jpeg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -104,6 +105,19 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
+        <ReadBook
+          title="Meditations on Moloch (Blog)"
+          author="Scott Alexander"
+          imgAlt="Mediations on Moloch"
+          img={moloch}
+          quote="And the whole point of Bostrom's Superintelligence is that this is within our reach. Once humans can design machines that are smarter than we are, 
+                by definition they'll be able to design machines which are smarter than they are, which can design machines smarter than they are, and so on in a 
+                feedback loop so tiny that it will smash up against the physical limitations for intelligence in a comparatively lightning-short amount of time. 
+                If multiple competing entities were likely to do that at once, we would be super-doomed. But the sheer speed of the cycle makes it possible that 
+                we will end up with one entity light-years ahead of the rest of civilization, so much so that it can suppress any competition - including competition 
+                for its title of most powerful entity - permanently. In the very near future, we are going to lift something to Heaven. It might be Moloch. But it 
+                might be something on our side. If it's on our side, it can kill Moloch dead."
+        />
         <ReadBook
           title="The Brothers Karmazov"
           author="Fyodor Dostoevsky"
