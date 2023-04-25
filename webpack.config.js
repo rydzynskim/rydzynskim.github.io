@@ -24,7 +24,7 @@ module.exports = (env) => {
           use: ['babel-loader', 'ts-loader'],
         },
         {
-          test: /\.jpg$/,
+          test: /\.(jpg|pdf)$/,
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',

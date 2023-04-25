@@ -2,6 +2,8 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { IBlogPostProps } from './types';
 import { blue } from '../../common/colors';
+import ImaQuitter from '../../common/pdfs/ImaQuitter.pdf';
+import TheIncentiveProblem from '../../common/pdfs/TheIncentiveProblem.pdf';
 
 const blogStyles = createUseStyles({
   title: {
@@ -25,7 +27,7 @@ const blogStyles = createUseStyles({
 
 function BlogPost(props: IBlogPostProps): React.ReactElement {
   const classes = blogStyles();
-  const { link, title, description } = props;
+  const { pdf, title, description } = props;
   return (
     <div>
       <div className={classes.title}>{title}</div>
@@ -34,7 +36,7 @@ function BlogPost(props: IBlogPostProps): React.ReactElement {
         <div>Click&nbsp;</div>
         <a
           className={classes.linkText}
-          href={link}
+          href={pdf}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -68,12 +70,12 @@ function Blog(): React.ReactElement {
       <div className={classes.blogsContainer}>
         <BlogPost
           title="I'm a Quitter"
-          link="https://docs.google.com/document/d/1W47rs_Zi1a9iMhIRT9IlBQzcReL6CW5TBAHksxVnVPU/edit?usp=sharing"
+          pdf={ImaQuitter}
           description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
         />
         <BlogPost
           title="The Incentive Problem"
-          link="https://docs.google.com/document/d/1IXiwVmyyNem1cbsGfw8HeZxKDxl5h9YRf7dCzj7cpPM/edit?usp=sharing"
+          pdf={TheIncentiveProblem}
           description="Why are incentives necessary? When do problems arise? Are there potential solutions?"
         />
       </div>

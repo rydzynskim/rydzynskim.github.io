@@ -1,5 +1,5 @@
 export interface IBlogPostProps {
   title: string;
-  link: string;
+  pdf: any;
   description: string;
 }
