@@ -69,7 +69,7 @@ function Blog(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.blogsContainer}>
         <BlogPost
-          title="I'm a Quitter"
+          title="Preventing Quiting"
           pdf={ImaQuitter}
           description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
         />
