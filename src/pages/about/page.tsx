@@ -59,25 +59,23 @@ function About(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionHeaderText}>Background</div>
         <div className={classes.sectionContentText}>
-          I like learning about and building software. That may be dumb to say,
-          as it can mean so many different things, but I&apos;m amazed by all
-          that can be accomplished with software. When I click a video on
-          youtube, I often find myself thinking about all the things that have
-          to work for the video to start playing on my computer. My computer
-          sends a signal over wifi encoding the request to my router. The router
-          is able to handle that, and convert it to an electrical signal that is
-          sent out over some cable. Those signals are then able to navigate a
-          series of switches and DNS servers to figure out where they need to
-          go. They reach a youtube server which handles my request and sends
-          data as an electrical signal back over the network. Those signals are
-          able to get back to my wifi router which then transmits them to my
-          computer. Meanwhile, my browser&apos;s engine is running, compiling,
-          and optimizing code that will handle that response. This engine is
-          converting code written in high level languages to lower and lower
-          levels until it reaches assembly code. This is passed on to GPUs and
-          CPUs which have firmware encoded on them able to run this code by
-          manipulating electrical components. This somehow results in a video
-          playing on my screen, all in a matter seconds.
+          I&apos;m passionate about the endless possibilities that software
+          offers. The marvel of the digital world captivates me, with its
+          astonishing blend of complexity and precision. Consider this: watching
+          a video on YouTube, a seemingly effortless action, involves a stunning
+          orchestration of events. Your computer sends a coded signal via Wi-Fi
+          to your router. This signal is transformed into an electrical impulse,
+          which then embarks on a journey through a labyrinth of switches and
+          DNS servers. It finally reaches a YouTube server that understands your
+          request and sends back data, retracing the path to your Wi-Fi router
+          and then to your computer.
+          <br />
+          <br />
+          Simultaneously, the browser&apos;s engine works like an indefatigable
+          interpreter, transforming high-level languages into machine-readable
+          code. This intricate dance of electrical signals and code is then
+          managed by CPUs and GPUs, ultimately manifesting as a video on your
+          screen—all in the blink of an eye.
           <br />
           <br />
           Even this massive over-simplification of something that seems trivial
