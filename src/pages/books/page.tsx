@@ -11,6 +11,7 @@ import atlasShrugged from '../../common/images/atlasShrugged.jpg';
 import theVitalQuestion from '../../common/images/theVitalQuestion.jpg';
 import whatIsLife from '../../common/images/whatIsLife.jpg';
 import moloch from '../../common/images/moloch.jpeg';
+import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -105,6 +106,17 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
+        <ReadBook
+          title="How To Be Successful (Blog)"
+          author="Sam Altman"
+          imgAlt="How to be Successful"
+          img={howToBeSuccessful}
+          quote="Most people overestimate risk and underestimate reward. Taking risks is important because it's impossible to be right all the 
+          time—you have to try many things and adapt quickly as you learn more. It's often easier to take risks early in your career; you don't 
+          have much to lose, and you potentially have a lot to gain. Once you’ve gotten yourself to a point where you have your basic obligations covered 
+          you should try to make it easy to take risks. Look for small bets you can make where you lose 1x if you’re wrong but make 100x if it works. Then 
+          make a bigger bet in that direction."
+        />
         <ReadBook
           title="The Bitcoin Standard"
           author="Saifedean Ammous"
