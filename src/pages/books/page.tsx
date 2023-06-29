@@ -106,6 +106,18 @@ function Reading(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
+          title="The Bitcoin Standard"
+          author="Saifedean Ammous"
+          imgAlt="The Bitcoin Standard"
+          img={bitcoinStandard}
+          quote="In a free market economy with sound money, savers have to defer consumption in order to save. Money that is deposited in a bank as savings is money
+                taken away from consumption by people who are delaying the gratification that consumption could give them in order to gain more gratification
+                in the future. The exact amount of savings becomes the exact amount of loanable funds available for producers to borrow. The availability of capital
+                goods is inextricably linked to the reduction of consumption: actual physcial resources, labor, land, and capital goods will move from being employed
+                in the provision of final consumption goods to the production of capital goods. The marginal worker is directed away from car sales and toward a job
+                in the car factory; the proverbial corn seed will go into the ground instead of being eaten."
+        />
+        <ReadBook
           title="Meditations on Moloch (Blog)"
           author="Scott Alexander"
           imgAlt="Mediations on Moloch"
@@ -147,12 +159,6 @@ function Reading(): React.ReactElement {
           author="John L. Hennessy and David A. Patterson"
           img={computerArchitecture}
           imgAlt="Computer Architecture"
-        />
-        <UpcomingBook
-          title="The Bitcoin Standard"
-          author="Saifedean Ammous"
-          img={bitcoinStandard}
-          imgAlt="The Bitcoin Standard"
         />
         <UpcomingBook
           title="Dune"
