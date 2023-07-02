@@ -2,7 +2,7 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { IBlogPostProps } from './types';
 import { blue } from '../../common/colors';
-import ImaQuitter from '../../common/pdfs/ImaQuitter.pdf';
+import PreventingQuitting from '../../common/pdfs/PreventingQuitting.pdf';
 import TheIncentiveProblem from '../../common/pdfs/TheIncentiveProblem.pdf';
 
 const blogStyles = createUseStyles({
@@ -70,7 +70,7 @@ function Blog(): React.ReactElement {
       <div className={classes.blogsContainer}>
         <BlogPost
           title="Preventing Quiting"
-          pdf={ImaQuitter}
+          pdf={PreventingQuitting}
           description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
         />
         <BlogPost
