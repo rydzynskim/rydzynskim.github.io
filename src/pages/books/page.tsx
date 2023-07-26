@@ -12,6 +12,7 @@ import theVitalQuestion from '../../common/images/theVitalQuestion.jpg';
 import whatIsLife from '../../common/images/whatIsLife.jpg';
 import moloch from '../../common/images/moloch.jpeg';
 import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
+import computationalExplorer from '../../common/images/computationalExplorer.jpg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -107,15 +108,29 @@ function Reading(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
+          title="Adventures of a Computational Explorer"
+          author="Stephen Wolfram"
+          imgAlt="Adventures of a Computational Explorer"
+          img={computationalExplorer}
+          quote="One defines some particular objective - say generating a hash code, evaluating a mathematical function, creating a musical piece, or
+                recognizing a class of linguistic forms. Then one searches the computational universe for a program that achieves the objective. It might
+                be that the simplest program that would be needed would be highly complex - and out of reach of enumerative search methods. But the Principle
+                of Computational Equivalence suggests that this will tend not to be the case - and in practice it seems that it is not. And indeed one often
+                finds surprisingly simple programs that achieve all sorts of complex purposes. Unlike things created by traditional engineering, however, there
+                is no constraint that these programs operate in ways that we as humans can readily understand. And indeed it is common to find that they do not.
+                Instead, in a sense, they tend to operate much more like many systems in nature - that we can describe as achieving a certain overall purpose, but
+                can't readily understand how they do it."
+        />
+        <ReadBook
           title="How To Be Successful (Blog)"
           author="Sam Altman"
           imgAlt="How to be Successful"
           img={howToBeSuccessful}
           quote="Most people overestimate risk and underestimate reward. Taking risks is important because it's impossible to be right all the 
-          time—you have to try many things and adapt quickly as you learn more. It's often easier to take risks early in your career; you don't 
-          have much to lose, and you potentially have a lot to gain. Once you’ve gotten yourself to a point where you have your basic obligations covered 
-          you should try to make it easy to take risks. Look for small bets you can make where you lose 1x if you’re wrong but make 100x if it works. Then 
-          make a bigger bet in that direction."
+                time—you have to try many things and adapt quickly as you learn more. It's often easier to take risks early in your career; you don't 
+                have much to lose, and you potentially have a lot to gain. Once you’ve gotten yourself to a point where you have your basic obligations covered 
+                you should try to make it easy to take risks. Look for small bets you can make where you lose 1x if you’re wrong but make 100x if it works. Then 
+                make a bigger bet in that direction."
         />
         <ReadBook
           title="The Bitcoin Standard"
