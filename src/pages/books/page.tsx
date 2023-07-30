@@ -13,6 +13,7 @@ import whatIsLife from '../../common/images/whatIsLife.jpg';
 import moloch from '../../common/images/moloch.jpeg';
 import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
 import computationalExplorer from '../../common/images/computationalExplorer.jpg';
+import shoeDog from '../../common/images/shoeDog.jpeg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -107,6 +108,19 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
+        <ReadBook
+          title="Shoe Dog"
+          author="Phil Knight"
+          imgAlt="Shoe Dog"
+          img={shoeDog}
+          quote="I thought back on my running career at Oregon. I'd competed with, and against, men far better, faster, more physically gifted. Many were future 
+                Olympians. And yet I'd trained myself to forget this unhappy fact. People reflexively assume that competition is always a good thing, that it always
+                brings out the best in people, but that's only true of people who can forget the competition. The art of competing, I'd learned from track, was the art
+                of forgetting, and I now remind myself of that fact. You must forget your limits. You must forget your doubts, your pain, your past. You must forget
+                that internal voice screaming, begging, 'not one more step!' And when it's not possible to forget it, you must negotiate with it. I thought over all
+                the races in which my mind wanted one thing, and my body wanted another, those laps in which I'd had to tell my body, 'Yes, you raise some excellent
+                points, but let's keep going anyway...'"
+        />
         <ReadBook
           title="Adventures of a Computational Explorer"
           author="Stephen Wolfram"
