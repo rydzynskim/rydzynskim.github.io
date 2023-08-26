@@ -109,6 +109,22 @@ function Reading(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
+          title="What is Life?"
+          author="Erwin Schrödinger"
+          img={whatIsLife}
+          imgAlt="What is Life?"
+          quote="Well, this is a fantastic description, perhaps less becoming a scientist than a poet. However, it needs no poetical imagination but only clear
+                and sober scientific reflection to recognize that we are here obviously faced with events whose regular and lawful unfolding is guided by a 'mechanism'
+                entirely different from the 'probability mechanism' of physics. For it is simply a fact of observation that the guiding principle in every cell is 
+                embodied in a single atmoic association existing only in one copy (or sometimes two) - and a fact of observation that it results in producing events
+                which are a paragon or orderliness. Whether we find it astonishing or whether we find it quite plausible that a small but highly organized group of
+                atoms be capable of acting in this manner, the situation is unprecedented, it is unknown anywhere else expect in living matter. The physicist and the
+                chemist, investigating inanimate matter, have never witnessed phenomena which they had to interpret this way. The case did not arise and so our theory
+                does not cover it - our beautiful statistical theory of which we were so justly proud because it allowed us to look behind the curtain, to watch the
+                magnificent order of exact physcial law coming forth from atomic and moleculer disorder; because it revelaed that the most important, the most general,
+                the all-embracing law of entropy increase could be understood without a special assumption ad hoc, for it is nothing but molecular disorder itself."
+        />
+        <ReadBook
           title="Shoe Dog"
           author="Phil Knight"
           imgAlt="Shoe Dog"
@@ -224,12 +240,6 @@ function Reading(): React.ReactElement {
           author="Nick Lane"
           img={theVitalQuestion}
           imgAlt="Teh Vital Question"
-        />
-        <UpcomingBook
-          title="What is Life?"
-          author="Schrodinger"
-          img={whatIsLife}
-          imgAlt="What is Life?"
         />
       </div>
     </div>
