@@ -14,6 +14,7 @@ import moloch from '../../common/images/moloch.jpeg';
 import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
 import computationalExplorer from '../../common/images/computationalExplorer.jpg';
 import shoeDog from '../../common/images/shoeDog.jpeg';
+import mindAndMatter from '../../common/images/mindAndMatter.jpg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -109,6 +110,18 @@ function Reading(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
+          title="Mind and Matter"
+          author="Erwin Schrödinger"
+          img={mindAndMatter}
+          imgAlt="Mind and Matter"
+          quote="Now in this fashion differentials, variants of response, bifurcations, etc., are piled up one upon the other in unserveyable abundance, but
+                only the most recent ones remain in the domain of consciousness, only those with regard to which the living substance is still in the stage
+                of learning or practising. One might say, metaphorically, that consciousness is the tutor who supervises the education of the living substance,
+                but leaves his pupil alone to deal with all those tasks for which he is already sufficiently trained. But I wish to underline three times in red
+                ink that I mean this only as a metaphor. The fact is only this, that new situations and the new responses they prompt are kept in the light of
+                consciousness; old and well practised ones are no longer so."
+        />
+        <ReadBook
           title="What is Life?"
           author="Erwin Schrödinger"
           img={whatIsLife}
@@ -117,7 +130,7 @@ function Reading(): React.ReactElement {
                 and sober scientific reflection to recognize that we are here obviously faced with events whose regular and lawful unfolding is guided by a 'mechanism'
                 entirely different from the 'probability mechanism' of physics. For it is simply a fact of observation that the guiding principle in every cell is 
                 embodied in a single atmoic association existing only in one copy (or sometimes two) - and a fact of observation that it results in producing events
-                which are a paragon or orderliness. Whether we find it astonishing or whether we find it quite plausible that a small but highly organized group of
+                which are a paragon of orderliness. Whether we find it astonishing or whether we find it quite plausible that a small but highly organized group of
                 atoms be capable of acting in this manner, the situation is unprecedented, it is unknown anywhere else expect in living matter. The physicist and the
                 chemist, investigating inanimate matter, have never witnessed phenomena which they had to interpret this way. The case did not arise and so our theory
                 does not cover it - our beautiful statistical theory of which we were so justly proud because it allowed us to look behind the curtain, to watch the
