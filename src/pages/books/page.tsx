@@ -34,6 +34,7 @@ const readBookStyles = createUseStyles({
   },
 });
 
+/* eslint-disable react/no-danger */
 function ReadBook(props: IReadBookProps): React.ReactElement {
   const classes = readBookStyles();
   const { title, quote, img, imgAlt, author } = props;
@@ -48,11 +49,12 @@ function ReadBook(props: IReadBookProps): React.ReactElement {
       </div>
       <div className={classes.info}>
         <b>Favorite Quote: </b>
-        {quote}
+        <div dangerouslySetInnerHTML={{ __html: quote }} />
       </div>
     </div>
   );
 }
+/* eslint-enable */
 
 const upcomingBookStyles = createUseStyles({
   bookContainer: {
@@ -109,6 +111,29 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
+        <ReadBook
+          title="Atlas Shrugged"
+          author="Ayn Rand"
+          img={atlasShrugged}
+          imgAlt="Atlas Shrugged"
+          quote="&quot;Every man is free to rise as far as he's able or willing, but it's only the degree to which he thinks that determines the degree to which he'll rise.
+                Physcial labor as such can extend no further than the range of the moment. The man who does no more than physcial labor, consumes the material value-equivalent
+                of his own contribution to the process of production, and leaves no further value, neither for himself nor others. But the man who produces an idea in any field
+                of rational endeavor - the man who discovers new knowledge - is the permanent benefactor of humanity. Material products can't be shared, they belong to some
+                ultimate consumer; it is only the value of an idea that can be shared with unlimited numbers of men, making all sharers richer at no one's sacrifice or loss, raising
+                the productive capacity of whatever labor they perform. It is the value of his own time that the strong of the intellect transfers to the weak, letting them
+                work on the jobs he discovered, while devoting his time to further discoveries. This is a mutual trade to mutual advantage; the interests of the mind are one,
+                no matter what the degree of intelligence, among men who desire to work and don't seek or expect the unearned.
+                <br>
+                <br>
+                In proportion to the mental energy he spent, the man who creates a new invention receives but a small percentage of his value in terms of material payment, no
+                matter what millions he earns. But the man who works as a janitor in the factory producing that invention, receives an enormous payment in proportion to the mental
+                effort that his job requires of him. And the same is true of all men between, on all levels of ambition and ability. The man at the top of the intellectual pyramid
+                contributes the most to all those below him, but gets nothing except his material payment, receiving no intellectual bonus from others to add to the value of his
+                time. The man at the bottom who, left to himself, would starve in his hopeless ineptitude, contributes nothing to those above him, but receives the bonus of all 
+                of their brains. Such is the nature of the 'competition' between the strong and the weak of the intellect. Such is the pattern of 'exploitation' for which you have
+                damned the strong.&quot; - John Galt"
+        />
         <ReadBook
           title="Mind and Matter"
           author="Erwin Schrödinger"
@@ -241,12 +266,6 @@ function Reading(): React.ReactElement {
           author="Sam Walker"
           img={theCaptainClass}
           imgAlt="The Captain Class"
-        />
-        <UpcomingBook
-          title="Atlas Shrugged"
-          author="Ayn Rand"
-          img={atlasShrugged}
-          imgAlt="Atlas Shrugged"
         />
         <UpcomingBook
           title="The Vital Question"
