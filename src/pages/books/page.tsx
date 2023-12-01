@@ -15,6 +15,7 @@ import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
 import computationalExplorer from '../../common/images/computationalExplorer.jpg';
 import shoeDog from '../../common/images/shoeDog.jpeg';
 import mindAndMatter from '../../common/images/mindAndMatter.jpg';
+import ghostInTheWires from '../../common/images/ghostInTheWires.jpg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -111,6 +112,26 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
+        <ReadBook
+          title="Ghost in the Wires"
+          author="Kevin Mitnick"
+          img={ghostInTheWires}
+          imgAlt="Ghost in the Wires"
+          quote='This is where it got a bit tricky. When two systems establish an initial connection over TCP, a series of packets are sent back and forth to create
+                a "session" between them. This is called a "three-way handshake." During the handshake, the target system transmits a packet back to the machine
+                trying to establish the connection. Because the targeted server believes it&apos;s responding to the real system&apos;s request to establish a connection,
+                the handshake process fails because the attacker&apos;s system never receives the packet to complete the three-way handshake.
+                <br>
+                <br>
+                Enter the TCP sequence number: the protocol uses sequence numbers to acknowledge the receipt of data. If the attacker could predict the sequence number
+                of the packet being sent from the target system to the real server during the initial handshake, he could complete the process by sending an acknowledgement
+                packet (with the correct sequence number), and establish a connection appearing to be from the trusted machine.
+                <br>
+                <br>
+                This effectively established a session by guessing the TCP sequence number. Because the targeted system was fooled into thinking it had established
+                a connection with a trusted machine, it allowed the attacker to exploit the trust relationaship, and bypass the usual password requirement - allowing full
+                access to the mahcine. At this point, the attacker could write over the corrent .rhosts file on the target machine, allowing anyone access to the root without a password.'
+        />
         <ReadBook
           title="Atlas Shrugged"
           author="Ayn Rand"
