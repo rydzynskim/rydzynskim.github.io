@@ -113,6 +113,31 @@ function Reading(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
+          title="The Captain Class"
+          author="Sam Walker"
+          img={theCaptainClass}
+          imgAlt="The Captain Class"
+          quote="The captains of the world's sixteen greatest sports teams were not angels. They sometimes did nasty things to win, especially when the stakes were highest.
+                They didn't believe that being sportsmanlike all the time was a prerequisite for being great.
+                <br>
+                <br>
+                The poeple in the stands, or the journalists who cover companies like Apple, see things differently than the participants. They live in the 'normal world',
+                where conventional principles of decency preside. The people inside the struggle, however, live between a different set of brackets. In the game frame, there
+                are prescribed penalties for misbehavior. You get a yellow card. You get ten minutes in the sin bin. You get expelled from the match. You get suspended. If it serves
+                a purpose, and you manage to get away with it, then it is, as Deschamps put it, an intelligent foul. While these actions may have the potential to be hurful,
+                hurting people isn't the point.
+                <br>
+                <br>
+                In sports and many other competitive pursuits, we're taught from an early age that there is no difference between how you compete and who you are. Some leaders,
+                like Derek Jeter, lived by this credo and won universal praise for doing so. But the Tier One captains considered this a false choice. They believed that what
+                mattered was another distinction - the difference between leaders who worry about how they're perceived and leaders who drag their teams through
+                challenges by any means necessary.
+                <br>
+                <br>
+                The world puts a lot of pressure on athlletes, especially captains, to be champions and paragons of virtue. But these two things do not always correlate.
+                It's sometimes one or the other. The most decorated captains in history understood this."
+        />
+        <ReadBook
           title="Ghost in the Wires"
           author="Kevin Mitnick"
           img={ghostInTheWires}
@@ -281,12 +306,6 @@ function Reading(): React.ReactElement {
           author="Frank Herbert"
           img={dune}
           imgAlt="Dune"
-        />
-        <UpcomingBook
-          title="The Captain Class"
-          author="Sam Walker"
-          img={theCaptainClass}
-          imgAlt="The Captain Class"
         />
         <UpcomingBook
           title="The Vital Question"
