@@ -30,32 +30,24 @@ function About(): React.ReactElement {
       <div className={classes.sectionContainer}>
         <div className={classes.sectionHeaderText}>Background</div>
         <div className={classes.sectionContentText}>
-          I&apos;m passionate about the endless possibilities that software
-          offers. The marvel of the digital world captivates me, with its
-          astonishing blend of complexity and precision. Consider this: watching
-          a video on YouTube, a seemingly effortless action, involves a stunning
-          orchestration of events. Your computer sends a coded signal via Wi-Fi
-          to your router. This signal is transformed into an electrical impulse,
-          which then embarks on a journey through a labyrinth of switches and
-          DNS servers. It finally reaches a YouTube server that understands your
-          request and sends back data, retracing the path to your Wi-Fi router
-          and then to your computer.
-          <br />
-          <br />
-          Simultaneously, the browser&apos;s engine works like an indefatigable
-          interpreter, transforming high-level languages into machine-readable
-          code. This intricate dance of electrical signals and code is then
-          managed by CPUs and GPUs, ultimately manifesting as a video on your
-          screen—all in the blink of an eye.
+          Consider watching a video on YouTube. Your computer sends a signal via
+          Wi-Fi to your router. This signal is transformed into an electrical
+          impulse, which then embarks on a journey through a labyrinth of
+          switches and DNS servers. It reaches a YouTube server that understands
+          your request and sends back data, retracing the path to your Wi-Fi
+          router and then to your computer. Simultaneously, the browser&apos;s
+          engine is transforming high-level languages into machine-readable
+          code. This intricate dance of electrical signals and code is managed
+          by CPUs and GPUs, ultimately manifesting as a video on your screen in
+          the blink of an eye.
           <br />
           <br />
           Even this massive over-simplification of something that seems trivial
           (watching a youtube video), illustrates the beauty of our software
-          infrastructure. Every one of the steps outlined above is extremely
-          complicated. Yet, somehow it all works, and it works every time. I
-          like learning about why that works. I like building on top of and
-          contributing to that infrastructure to make products that someone will
-          enjoy or find useful.
+          infrastructure. Every one of the steps outlined above is complicated.
+          Yet, somehow it all works, and it works consistently. I like learning
+          about why that works at every level of the stack. I like building on
+          top of, contributing to, and improving on that infrastructure.
         </div>
       </div>
       <div className={classes.sectionContainer}>
@@ -79,27 +71,22 @@ function About(): React.ReactElement {
           software and firmware code). We touch a large portion of the software
           stack - directly responsible for the printers&apos; UI and backend
           application. We also work closely with teams who work on electrical
-          component firmware and our custom Linux distribution.
-          <br />
-          <br />
-          It has been invaluable experience learning how to maintain and work
-          within a large software application. Outside of the technical skills,
-          I&apos;ve learned a ton about best practices and how to manage long
-          term projects. My favorite part of the job is being able to work with
-          engineers across various disciplines on a daily basis. I&apos;m often
-          interacting with electrical, mechanical, and materials engineers.
+          component firmware and our custom Linux distribution. My favorite part
+          of the job is being able to work with engineers across various
+          disciplines on a daily basis. I&apos;m often interacting with
+          electrical, mechanical, and materials engineers.
         </div>
       </div>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionHeaderText}>Interests</div>
         <div className={classes.sectionContentText}>
           Outside of work and personal projects/learnings I have a few hobbies.
-          I enjoy watching sports - mainly hockey, baseball, and football.
-          I&apos;m a big Buffalo sports fan, go Bills! I stay active playing
-          golf, skiing, and going to the gym. At night I enjoy reading, and am
-          always looking for new books (check out the reading tab). Recently,
-          I&apos;ve been trying to write more, as I find it helps me organize my
-          thoughts and deeply think about a subject (check out the blog tab).
+          I enjoy watching sports - mainly hockey, golf, and football. I&apos;m
+          a big Buffalo sports fan, go Bills! I stay active playing golf and
+          going to the gym. At night I enjoy reading, and am always looking for
+          new books (check out the reading tab). Recently, I&apos;ve been trying
+          to write more, as I find it helps me organize my thoughts and deeply
+          think about a subject (check out the blog tab).
           <br />
           <br />I love playing poker, and watch too many poker blogs on youtube.
           Some friends and I won a few prizes in the 2022 poker bots competition
