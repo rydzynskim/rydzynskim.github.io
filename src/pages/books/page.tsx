@@ -1,21 +1,17 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { IReadBookProps, IUpcomingBookProps } from './types';
-import theBrothersKaramazov from '../../common/images/theBrothersKaramazov.jpg';
-import genghis from '../../common/images/genghis.jpg';
-import bitcoinStandard from '../../common/images/bitcoinStandard.jpg';
-import computerArchitecture from '../../common/images/computerArchitecture.jpg';
-import dune from '../../common/images/dune.jpg';
-import theCaptainClass from '../../common/images/theCaptainClass.jpg';
-import atlasShrugged from '../../common/images/atlasShrugged.jpg';
-import theVitalQuestion from '../../common/images/theVitalQuestion.jpg';
-import whatIsLife from '../../common/images/whatIsLife.jpg';
-import moloch from '../../common/images/moloch.jpeg';
-import howToBeSuccessful from '../../common/images/howToBeSuccessful.jpeg';
-import computationalExplorer from '../../common/images/computationalExplorer.jpg';
-import shoeDog from '../../common/images/shoeDog.jpeg';
-import mindAndMatter from '../../common/images/mindAndMatter.jpg';
-import ghostInTheWires from '../../common/images/ghostInTheWires.jpg';
+import { IReadBookProps } from './types';
+import theBrothersKaramazov from '../../assets/images/theBrothersKaramazov.jpg';
+import bitcoinStandard from '../../assets/images/bitcoinStandard.jpg';
+import theCaptainClass from '../../assets/images/theCaptainClass.jpg';
+import atlasShrugged from '../../assets/images/atlasShrugged.jpg';
+import whatIsLife from '../../assets/images/whatIsLife.jpg';
+import moloch from '../../assets/images/moloch.jpeg';
+import howToBeSuccessful from '../../assets/images/howToBeSuccessful.jpeg';
+import computationalExplorer from '../../assets/images/computationalExplorer.jpg';
+import shoeDog from '../../assets/images/shoeDog.jpeg';
+import mindAndMatter from '../../assets/images/mindAndMatter.jpg';
+import ghostInTheWires from '../../assets/images/ghostInTheWires.jpg';
 
 const readBookStyles = createUseStyles({
   bookContainer: {
@@ -57,37 +53,6 @@ function ReadBook(props: IReadBookProps): React.ReactElement {
 }
 /* eslint-enable */
 
-const upcomingBookStyles = createUseStyles({
-  bookContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginTop: '1.5rem',
-  },
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-  title: {
-    fontSize: '1.5rem',
-  },
-});
-
-function UpcomingBook(props: IUpcomingBookProps): React.ReactElement {
-  const classes = upcomingBookStyles();
-  const { title, img, imgAlt, author } = props;
-  return (
-    <div className={classes.bookContainer}>
-      <div className={classes.header}>
-        <div>
-          <div className={classes.title}>{title}</div>
-          <div>by {author}</div>
-        </div>
-        <img src={img} alt={imgAlt} height="150" width="100" />
-      </div>
-    </div>
-  );
-}
-
 const useStyles = createUseStyles({
   container: {
     height: '100%',
@@ -96,13 +61,9 @@ const useStyles = createUseStyles({
     alignItems: 'center',
   },
   sectionContainer: {
-    marginTop: '3rem',
-    width: '600px',
     display: 'flex',
     flexDirection: 'column',
-  },
-  sectionText: {
-    fontSize: '2rem',
+    width: '600px',
   },
 });
 
@@ -111,7 +72,6 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
-        <div className={classes.sectionText}>Recently Read</div>
         <ReadBook
           title="The Captain Class"
           author="Sam Walker"
@@ -285,33 +245,6 @@ function Reading(): React.ReactElement {
                  offering even so, and praise God, you who are the only one left. And if there are two of you who come together thus, there is already a whole
                  world, a world of living love; embrace each other in tenderness and give praise to the lord: for his truth has been made full, if only in the
                  two of you." - among the final words of Elder Zosima'
-        />
-      </div>
-      <div className={classes.sectionContainer}>
-        <div className={classes.sectionText}>Upcoming Reads</div>
-        <UpcomingBook
-          title="Genghis: Birth of an Empire"
-          author="Conn Iggulden"
-          img={genghis}
-          imgAlt="Genghis"
-        />
-        <UpcomingBook
-          title="Computer Architecture: A Quantitative Approach"
-          author="John L. Hennessy and David A. Patterson"
-          img={computerArchitecture}
-          imgAlt="Computer Architecture"
-        />
-        <UpcomingBook
-          title="Dune"
-          author="Frank Herbert"
-          img={dune}
-          imgAlt="Dune"
-        />
-        <UpcomingBook
-          title="The Vital Question"
-          author="Nick Lane"
-          img={theVitalQuestion}
-          imgAlt="Teh Vital Question"
         />
       </div>
     </div>

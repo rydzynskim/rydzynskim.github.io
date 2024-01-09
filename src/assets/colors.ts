@@ -5,4 +5,4 @@ export const black = 'rgb(0, 0, 0)';
 export const gray = 'rgb(150, 150, 150)';
 
 // blue
-export const blue = '#32b7cf';
+export const blue = 'rgb(25	119	189)';

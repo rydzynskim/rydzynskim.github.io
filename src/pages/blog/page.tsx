@@ -1,23 +1,26 @@
 import React from 'react';
+import { Outlet, useNavigate, useOutlet } from 'react-router-dom';
 import { createUseStyles } from 'react-jss';
-import { IBlogPostProps } from './types';
-import { blue } from '../../common/colors';
-import PreventingQuitting from '../../common/pdfs/PreventingQuitting.pdf';
-import TheIncentiveProblem from '../../common/pdfs/TheIncentiveProblem.pdf';
+import { IBlogSlotProps } from './types';
+import { blue } from '../../assets/colors';
 
 const blogStyles = createUseStyles({
+  topContainer: {
+    marginTop: '1.5rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   title: {
     fontSize: '1.5rem',
-    marginTop: '1.5rem',
-  },
-  linkContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    marginTop: '1rem',
-  },
-  linkText: {
     color: blue,
-    textDecoration: 'none',
+    textDecoration: 'underline',
+    '&:hover': {
+      cursor: 'pointer',
+    },
+  },
+  date: {
+    fontSize: '1.1rem',
   },
   description: {
     fontSize: '1.1rem',
@@ -25,25 +28,20 @@ const blogStyles = createUseStyles({
   },
 });
 
-function BlogPost(props: IBlogPostProps): React.ReactElement {
+function BlogSlot(props: IBlogSlotProps): React.ReactElement {
   const classes = blogStyles();
-  const { pdf, title, description } = props;
+  const navigation = useNavigate();
+  const { path, date, title, description } = props;
   return (
     <div>
-      <div className={classes.title}>{title}</div>
-      <div className={classes.description}>{description}</div>
-      <div className={classes.linkContainer}>
-        <div>Click&nbsp;</div>
-        <a
-          className={classes.linkText}
-          href={pdf}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HERE
+      <div className={classes.topContainer}>
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions, jsx-a11y/anchor-is-valid */}
+        <a className={classes.title} onClick={() => navigation(path)}>
+          {title}
         </a>
-        <div>&nbsp;to open in a new tab.</div>
+        <div className={classes.date}>{date}</div>
       </div>
+      <div className={classes.description}>{description}</div>
     </div>
   );
 }
@@ -61,24 +59,41 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
   },
+  outletContainer: {
+    width: '800px',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+  },
 });
 
 function Blog(): React.ReactElement {
+  const outlet = useOutlet();
   const classes = useStyles();
-  return (
-    <div className={classes.container}>
-      <div className={classes.blogsContainer}>
-        <BlogPost
-          title="Preventing Quiting"
-          pdf={PreventingQuitting}
-          description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
-        />
-        <BlogPost
-          title="The Incentive Problem"
-          pdf={TheIncentiveProblem}
-          description="Why are incentives necessary? When do problems arise? Are there potential solutions?"
-        />
+  if (!outlet) {
+    return (
+      <div className={classes.container}>
+        <div className={classes.blogsContainer}>
+          <BlogSlot
+            title="Preventing Quitting"
+            date="3/31/2023"
+            description="Useful mindset shifts to avoid quitting open-ended tasks with no deadline."
+            path="quitting"
+          />
+          <BlogSlot
+            title="The Incentive Problem"
+            date="3/27/2023"
+            description="Why are incentives necessary? When do problems arise? Are there potential solutions?"
+            path="incentives"
+          />
+        </div>
       </div>
+    );
+  }
+
+  return (
+    <div className={classes.outletContainer}>
+      <Outlet />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { createUseStyles } from 'react-jss';
-import { black, gray } from './common/colors';
+import { black, gray } from './assets/colors';
 
 const useStyles = createUseStyles({
   container: {
-    height: '100%',
+    minHeight: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -48,7 +48,9 @@ const useStyles = createUseStyles({
   },
   outletContainer: {
     width: '800px',
-    height: '100%',
+    minHeight: '100%',
+    marginTop: '2rem',
+    marginBottom: '4rem',
   },
 });
 

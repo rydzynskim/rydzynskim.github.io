@@ -6,6 +6,8 @@ import About from './pages/about/page';
 import Projects from './pages/projects/page';
 import Reading from './pages/books/page';
 import Blog from './pages/blog/page';
+import BlogPost from './pages/blog/blog-post';
+import { EBlogPost } from './pages/blog/types';
 
 const router = createHashRouter([
   {
@@ -31,6 +33,16 @@ const router = createHashRouter([
       {
         path: 'blog',
         element: <Blog />,
+        children: [
+          {
+            path: 'quitting',
+            element: <BlogPost post={EBlogPost.PREVENTING_QUITING} />,
+          },
+          {
+            path: 'incentives',
+            element: <BlogPost post={EBlogPost.INCENTIVE_PROBLEM} />,
+          },
+        ],
       },
     ],
   },

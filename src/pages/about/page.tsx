@@ -1,7 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { blue } from '../../common/colors';
-import MitchRydzynskiResume from '../../common/pdfs/MitchRydzynskiResume.pdf';
 
 const useStyles = createUseStyles({
   container: {
@@ -9,22 +7,6 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  resumeContainer: {
-    width: '600px',
-    marginTop: '1.5rem',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-  resumeText: {
-    fontSize: '1.5rem',
-    marginRight: '0.5rem',
-  },
-  resumeLink: {
-    color: blue,
-    textDecoration: 'none',
-    fontSize: '1.5rem',
   },
   sectionHeaderText: {
     fontSize: '1.5rem',
@@ -45,17 +27,6 @@ function About(): React.ReactElement {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <div className={classes.resumeContainer}>
-        <div className={classes.resumeText}>Check out my resume</div>
-        <a
-          className={classes.resumeLink}
-          href={MitchRydzynskiResume}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HERE
-        </a>
-      </div>
       <div className={classes.sectionContainer}>
         <div className={classes.sectionHeaderText}>Background</div>
         <div className={classes.sectionContentText}>

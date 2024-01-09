@@ -1,7 +1,8 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { gray } from '../../common/colors';
-import composite from '../../common/images/composite.jpg';
+import { blue } from '../../assets/colors';
+import composite from '../../assets/images/composite.jpg';
+import MitchRydzynskiResume from '../../assets/pdfs/MitchRydzynskiResume.pdf';
 
 const useStyles = createUseStyles({
   container: {
@@ -10,6 +11,7 @@ const useStyles = createUseStyles({
     flexDirection: 'column',
   },
   infoContainer: {
+    marginTop: '5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around',
@@ -20,16 +22,19 @@ const useStyles = createUseStyles({
     width: '400px',
   },
   spacer: {
+    marginTop: '2rem',
     flex: 1,
     display: 'flex',
-    justifyContent: 'flex-end',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
     alignItems: 'flex-end',
   },
   sourceCodeText: {
-    margin: '2rem',
+    marginRight: '2rem',
+    marginBottom: '1rem',
     fontSize: '1.25rem',
     fontWeight: 500,
-    color: gray,
+    color: blue,
   },
 });
 
@@ -45,6 +50,14 @@ function Home(): React.ReactElement {
         <img src={composite} alt="Headshot" height="400" width="300" />
       </div>
       <div className={classes.spacer}>
+        <a
+          className={classes.sourceCodeText}
+          href={MitchRydzynskiResume}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
         <a
           className={classes.sourceCodeText}
           href="https://github.com/rydzynskim/rydzynskim.github.io"

@@ -30,6 +30,10 @@ module.exports = (env) => {
             name: '[name].[ext]',
           },
         },
+        {
+          test: /\.md$/,
+          loader: 'raw-loader',
+        },
       ],
     },
     resolve: {
@@ -38,7 +42,7 @@ module.exports = (env) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        favicon: './src/common/images/favicon-32x32.png',
+        favicon: './src/assets/images/favicon-32x32.png',
       }),
       new ProgressPlugin(true),
     ],
