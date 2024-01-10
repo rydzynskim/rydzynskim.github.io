@@ -6,7 +6,8 @@
     "lint": "npx eslint .",
     "prettier": "npx prettier --write .",
     "build": "npx webpack --env mode=production",
-    "dev": "npx webpack serve --env mode=development"
+    "dev": "npx webpack serve --env mode=development",
+    "typecheck": "npx tsc --no-emit"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
