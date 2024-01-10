@@ -94,7 +94,7 @@ function Reading(): React.ReactElement {
                 challenges by any means necessary.
                 <br>
                 <br>
-                The world puts a lot of pressure on athlletes, especially captains, to be champions and paragons of virtue. But these two things do not always correlate.
+                The world puts a lot of pressure on athletes, especially captains, to be champions and paragons of virtue. But these two things do not always correlate.
                 It's sometimes one or the other. The most decorated captains in history understood this."
         />
         <ReadBook
@@ -115,7 +115,7 @@ function Reading(): React.ReactElement {
                 <br>
                 This effectively established a session by guessing the TCP sequence number. Because the targeted system was fooled into thinking it had established
                 a connection with a trusted machine, it allowed the attacker to exploit the trust relationaship, and bypass the usual password requirement - allowing full
-                access to the mahcine. At this point, the attacker could write over the corrent .rhosts file on the target machine, allowing anyone access to the root without a password.'
+                access to the mahcine. At this point, the attacker could write over the current .rhosts file on the target machine, allowing anyone access to the root without a password.'
         />
         <ReadBook
           title="Atlas Shrugged"
