@@ -12,8 +12,9 @@ import computationalExplorer from '../../assets/images/computationalExplorer.jpg
 import shoeDog from '../../assets/images/shoeDog.jpeg';
 import mindAndMatter from '../../assets/images/mindAndMatter.jpg';
 import ghostInTheWires from '../../assets/images/ghostInTheWires.jpg';
+import computerArchitecture from '../../assets/images/computerArchitecture.jpg';
 
-const readBookStyles = createUseStyles({
+const bookStyles = createUseStyles({
   bookContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -32,8 +33,8 @@ const readBookStyles = createUseStyles({
 });
 
 /* eslint-disable react/no-danger */
-function ReadBook(props: IReadBookProps): React.ReactElement {
-  const classes = readBookStyles();
+function Book(props: IReadBookProps): React.ReactElement {
+  const classes = bookStyles();
   const { title, quote, img, imgAlt, author } = props;
   return (
     <div className={classes.bookContainer}>
@@ -72,7 +73,18 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
-        <ReadBook
+        <Book
+          title="Computer Architecture A Quantitative Approach"
+          author="John L. Hennessy and David A. Patterson"
+          img={computerArchitecture}
+          imgAlt="Computer Architecture"
+          quote="As 2000 began the focus on exploiting instruction-level parallelism was at its peak. In the first five years of the new century, it became clear that the ILP
+                approach had likely peaked and that new approaches would be needed. By 2005 Intel and all the other major processor manufacturers had revamped their approach
+                to focus on multicore. Higher performance would be achieved through thread-level parallelism rather than instruction-level parallelism, and the responsibility for
+                using the processor efficiently would largely shift from the hardware to the software and the programmer. This change was the most significant change in processor
+                architecture since the early days of pipelining and instruction-level parallelism some 25+ years earlier."
+        />
+        <Book
           title="The Captain Class"
           author="Sam Walker"
           img={theCaptainClass}
@@ -97,7 +109,7 @@ function Reading(): React.ReactElement {
                 The world puts a lot of pressure on athletes, especially captains, to be champions and paragons of virtue. But these two things do not always correlate.
                 It's sometimes one or the other. The most decorated captains in history understood this."
         />
-        <ReadBook
+        <Book
           title="Ghost in the Wires"
           author="Kevin Mitnick"
           img={ghostInTheWires}
@@ -117,7 +129,7 @@ function Reading(): React.ReactElement {
                 a connection with a trusted machine, it allowed the attacker to exploit the trust relationaship, and bypass the usual password requirement - allowing full
                 access to the mahcine. At this point, the attacker could write over the current .rhosts file on the target machine, allowing anyone access to the root without a password.'
         />
-        <ReadBook
+        <Book
           title="Atlas Shrugged"
           author="Ayn Rand"
           img={atlasShrugged}
@@ -140,7 +152,7 @@ function Reading(): React.ReactElement {
                 of their brains. Such is the nature of the 'competition' between the strong and the weak of the intellect. Such is the pattern of 'exploitation' for which you have
                 damned the strong.&quot; - John Galt"
         />
-        <ReadBook
+        <Book
           title="Mind and Matter"
           author="Erwin Schrödinger"
           img={mindAndMatter}
@@ -152,7 +164,7 @@ function Reading(): React.ReactElement {
                 ink that I mean this only as a metaphor. The fact is only this, that new situations and the new responses they prompt are kept in the light of
                 consciousness; old and well practised ones are no longer so."
         />
-        <ReadBook
+        <Book
           title="What is Life?"
           author="Erwin Schrödinger"
           img={whatIsLife}
@@ -168,7 +180,7 @@ function Reading(): React.ReactElement {
                 magnificent order of exact physcial law coming forth from atomic and moleculer disorder; because it revelaed that the most important, the most general,
                 the all-embracing law of entropy increase could be understood without a special assumption ad hoc, for it is nothing but molecular disorder itself."
         />
-        <ReadBook
+        <Book
           title="Shoe Dog"
           author="Phil Knight"
           imgAlt="Shoe Dog"
@@ -181,7 +193,7 @@ function Reading(): React.ReactElement {
                 the races in which my mind wanted one thing, and my body wanted another, those laps in which I'd had to tell my body, 'Yes, you raise some excellent
                 points, but let's keep going anyway...'"
         />
-        <ReadBook
+        <Book
           title="Adventures of a Computational Explorer"
           author="Stephen Wolfram"
           imgAlt="Adventures of a Computational Explorer"
@@ -195,7 +207,7 @@ function Reading(): React.ReactElement {
                 Instead, in a sense, they tend to operate much more like many systems in nature - that we can describe as achieving a certain overall purpose, but
                 can't readily understand how they do it."
         />
-        <ReadBook
+        <Book
           title="How To Be Successful (Blog)"
           author="Sam Altman"
           imgAlt="How to be Successful"
@@ -206,7 +218,7 @@ function Reading(): React.ReactElement {
                 you should try to make it easy to take risks. Look for small bets you can make where you lose 1x if you’re wrong but make 100x if it works. Then 
                 make a bigger bet in that direction."
         />
-        <ReadBook
+        <Book
           title="The Bitcoin Standard"
           author="Saifedean Ammous"
           imgAlt="The Bitcoin Standard"
@@ -218,7 +230,7 @@ function Reading(): React.ReactElement {
                 in the provision of final consumption goods to the production of capital goods. The marginal worker is directed away from car sales and toward a job
                 in the car factory; the proverbial corn seed will go into the ground instead of being eaten."
         />
-        <ReadBook
+        <Book
           title="Meditations on Moloch (Blog)"
           author="Scott Alexander"
           imgAlt="Mediations on Moloch"
@@ -231,7 +243,7 @@ function Reading(): React.ReactElement {
                 for its title of most powerful entity - permanently. In the very near future, we are going to lift something to Heaven. It might be Moloch. But it 
                 might be something on our side. If it's on our side, it can kill Moloch dead."
         />
-        <ReadBook
+        <Book
           title="The Brothers Karmazov"
           author="Fyodor Dostoevsky"
           imgAlt="The Brothers Karamazov"
