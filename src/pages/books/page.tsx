@@ -13,6 +13,7 @@ import shoeDog from '../../assets/images/shoeDog.jpeg';
 import mindAndMatter from '../../assets/images/mindAndMatter.jpg';
 import ghostInTheWires from '../../assets/images/ghostInTheWires.jpg';
 import computerArchitecture from '../../assets/images/computerArchitecture.jpg';
+import theHappinessAdvantage from '../../assets/images/theHappinessAdvantage.jpg';
 
 const bookStyles = createUseStyles({
   bookContainer: {
@@ -73,6 +74,23 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
+        <Book
+          title="The Happiness Advantage"
+          author="Shawn Achor"
+          img={theHappinessAdvantage}
+          imgAlt="The Happiness Advantage"
+          quote="Beliefs can actually change the concrete results of our efforts and our work. This isn't just a theory; it's been proven by a number of serious scientific studies.
+                In one conducted a few years ago, Ali Crum, one of my former students and now research colleague from Yale University, teamed up with Ellen Langer to perform an
+                experiment on the cleaning staff of seven different hotels. They told half of the employees how much exercise they were getting every day through their work, how
+                many calories their daily activities burned, how similar vacuuming is to a cardio workout, and so on. The other half of the cleaning staff, as a control group,
+                was given no such good news.
+                <br>
+                <br>
+                At the end of the expirement, several weeks later, Crum and Langer found that those who had been primed to thinkof their work as exercise had actually lost weight;
+                not only that, but their cholestrol had also dropped. These individuals had not done any more work, nor had they exercised any more than the control group. The
+                only difference was in how their brains conceived of the work they were doing. That point is so important, it bears repeating: <i>The mental construction of our daily
+                activities, more than the activity itself, defines our reality.</i>"
+        />
         <Book
           title="Computer Architecture A Quantitative Approach"
           author="John L. Hennessy and David A. Patterson"

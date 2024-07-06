@@ -7,7 +7,7 @@
     "prettier": "npx prettier --write .",
     "build": "npx webpack --env mode=production",
     "dev": "npx webpack serve --env mode=development",
-    "typecheck": "npx tsc --no-emit"
+    "typecheck": "npx tsc --noEmit"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
