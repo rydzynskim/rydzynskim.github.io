@@ -14,6 +14,7 @@ import mindAndMatter from '../../assets/images/mindAndMatter.jpg';
 import ghostInTheWires from '../../assets/images/ghostInTheWires.jpg';
 import computerArchitecture from '../../assets/images/computerArchitecture.jpg';
 import theHappinessAdvantage from '../../assets/images/theHappinessAdvantage.jpg';
+import elonMusk from '../../assets/images/elonMusk.jpg';
 
 const bookStyles = createUseStyles({
   bookContainer: {
@@ -74,6 +75,19 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
+        <Book
+          title="Elon Musk"
+          author="Walter Isaacson"
+          img={elonMusk}
+          imgAlt="Elon Musk"
+          quote='"Step one should be to question the requirements," he says. "Make them less wrong and dumb, because all requirements are somewhat wrong and dumb. And
+                then delete, delete, delete."
+                <br>
+                <br>
+                Notable Second:
+                <br>
+                Bezos was methodical. His motto was <i>gradatim ferociter</i>, or "Step by Step, ferociously."'
+        />
         <Book
           title="The Happiness Advantage"
           author="Shawn Achor"
