@@ -20,7 +20,7 @@ const useStyles = createUseStyles({
   pageNavContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '400px',
+    width: '350px',
   },
   idleNameNav: {
     fontSize: '1.75rem',
@@ -70,14 +70,6 @@ function Nav(): React.ReactElement {
           </NavLink>
         </div>
         <div className={classes.pageNavContainer}>
-          <NavLink
-            to="about"
-            className={({ isActive }) =>
-              isActive ? classes.activeNav : classes.idleNav
-            }
-          >
-            ABOUT
-          </NavLink>
           <NavLink
             to="projects"
             className={({ isActive }) =>
