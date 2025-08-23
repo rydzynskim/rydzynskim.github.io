@@ -15,6 +15,7 @@ import ghostInTheWires from '../../assets/images/ghostInTheWires.jpg';
 import computerArchitecture from '../../assets/images/computerArchitecture.jpg';
 import theHappinessAdvantage from '../../assets/images/theHappinessAdvantage.jpg';
 import elonMusk from '../../assets/images/elonMusk.jpg';
+import theGoodEarth from '../../assets/images/theGoodEarth.jpg';
 
 const bookStyles = createUseStyles({
   bookContainer: {
@@ -76,17 +77,22 @@ function Reading(): React.ReactElement {
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
         <Book
+          title="The Good Earth"
+          author="Pearl S. Buck"
+          img={theGoodEarth}
+          imgAlt="The Good Earth"
+          quote="Now Wang Lung in the old days when the great family were there would have felt himself one of these common people and against the great and half hating,
+                half fearful of them. But now that he had land and that he had silver and gold hidden safely away, he despised these people who swarmed everywhere, and
+                he said to himself they were filthy and he picked his way among them with his nose up and breathing lightly because of the stink they made. And he despised
+                them and was against them as though he himself belonged to the great house."
+        />
+        <Book
           title="Elon Musk"
           author="Walter Isaacson"
           img={elonMusk}
           imgAlt="Elon Musk"
           quote='"Step one should be to question the requirements," he says. "Make them less wrong and dumb, because all requirements are somewhat wrong and dumb. And
-                then delete, delete, delete."
-                <br>
-                <br>
-                Notable Second:
-                <br>
-                Bezos was methodical. His motto was <i>gradatim ferociter</i>, or "Step by Step, ferociously."'
+                then delete, delete, delete."'
         />
         <Book
           title="The Happiness Advantage"
