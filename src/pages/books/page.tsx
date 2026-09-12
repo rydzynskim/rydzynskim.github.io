@@ -16,6 +16,7 @@ import computerArchitecture from '../../assets/images/computerArchitecture.jpg';
 import theHappinessAdvantage from '../../assets/images/theHappinessAdvantage.jpg';
 import elonMusk from '../../assets/images/elonMusk.jpg';
 import theGoodEarth from '../../assets/images/theGoodEarth.jpg';
+import nineteentwentynine from '../../assets/images/nineteentwentynine.jpeg';
 
 const bookStyles = createUseStyles({
   bookContainer: {
@@ -76,6 +77,22 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
+        <Book
+          title="1929"
+          author="Andrew Ross Sorkin"
+          img={nineteentwentynine}
+          imgAlt="1929"
+          quote='Churchill did not consider this one man&apos;s distress emblematic of the moment. What impressed Churchill during his trip was a quality of resilience, an
+                "unshakable faith in a golden future," that he did not see at home. Unlike the English, Americans were not deathly afraid of making mistakes
+                with their money because they believed that even if they were wiped out, opportunities to make it all back, and more, would continue to present themselves.
+                "Before disparaging American methods," he wrote, "the English critic would do well to acquaint himself with the inherent probity and strength
+                of the American speculative machine. It is not built to prevent crises, but to survive them."
+                <br>
+                <br>
+                His optimism about American capitalism was unbowed. "No one could doubt that this financial disaster, huge as it is, cruel as it is to thousands, is only
+                a passing episode in the march of a valiant and serviceable people who by fierce experiment are hewing new paths for man, and showing to all nations much that
+                they should attempt and much that they should avoid."'
+        />
         <Book
           title="The Good Earth"
           author="Pearl S. Buck"
