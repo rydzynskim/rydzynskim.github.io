@@ -17,6 +17,7 @@ import theHappinessAdvantage from '../../assets/images/theHappinessAdvantage.jpg
 import elonMusk from '../../assets/images/elonMusk.jpg';
 import theGoodEarth from '../../assets/images/theGoodEarth.jpg';
 import nineteentwentynine from '../../assets/images/nineteentwentynine.jpeg';
+import birthofanempire from '../../assets/images/birthofanempire.jpeg';
 
 const bookStyles = createUseStyles({
   bookContainer: {
@@ -77,6 +78,18 @@ function Reading(): React.ReactElement {
   return (
     <div className={classes.container}>
       <div className={classes.sectionContainer}>
+        <Book
+          title="Ghengis: Birth of an Empire"
+          author="Conn Iggulden"
+          img={birthofanempire}
+          imgAlt="Ghengis: Birth of an Empire"
+          quote='They were few, but they were hardened in fire. They had been cast out and many would hunger as he did: for a tribe, and for a chance to strike back
+                at a world that had abandoned them.
+                <br>
+                <br>
+                "It is begun here," Temujin whispered. "I have had enough of hiding. Let them hide from <i>me</i>."
+                '
+        />
         <Book
           title="1929"
           author="Andrew Ross Sorkin"
