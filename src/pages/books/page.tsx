@@ -6,8 +6,6 @@ import bitcoinStandard from '../../assets/images/bitcoinStandard.jpg';
 import theCaptainClass from '../../assets/images/theCaptainClass.jpg';
 import atlasShrugged from '../../assets/images/atlasShrugged.jpg';
 import whatIsLife from '../../assets/images/whatIsLife.jpg';
-import moloch from '../../assets/images/moloch.jpeg';
-import howToBeSuccessful from '../../assets/images/howToBeSuccessful.jpeg';
 import computationalExplorer from '../../assets/images/computationalExplorer.jpg';
 import shoeDog from '../../assets/images/shoeDog.jpeg';
 import mindAndMatter from '../../assets/images/mindAndMatter.jpg';
@@ -276,17 +274,6 @@ function Reading(): React.ReactElement {
                 can't readily understand how they do it."
         />
         <Book
-          title="How To Be Successful (Blog)"
-          author="Sam Altman"
-          imgAlt="How to be Successful"
-          img={howToBeSuccessful}
-          quote="Most people overestimate risk and underestimate reward. Taking risks is important because it's impossible to be right all the 
-                time—you have to try many things and adapt quickly as you learn more. It's often easier to take risks early in your career; you don't 
-                have much to lose, and you potentially have a lot to gain. Once you’ve gotten yourself to a point where you have your basic obligations covered 
-                you should try to make it easy to take risks. Look for small bets you can make where you lose 1x if you’re wrong but make 100x if it works. Then 
-                make a bigger bet in that direction."
-        />
-        <Book
           title="The Bitcoin Standard"
           author="Saifedean Ammous"
           imgAlt="The Bitcoin Standard"
@@ -297,19 +284,6 @@ function Reading(): React.ReactElement {
                 goods is inextricably linked to the reduction of consumption: actual physcial resources, labor, land, and capital goods will move from being employed
                 in the provision of final consumption goods to the production of capital goods. The marginal worker is directed away from car sales and toward a job
                 in the car factory; the proverbial corn seed will go into the ground instead of being eaten."
-        />
-        <Book
-          title="Meditations on Moloch (Blog)"
-          author="Scott Alexander"
-          imgAlt="Mediations on Moloch"
-          img={moloch}
-          quote="And the whole point of Bostrom's Superintelligence is that this is within our reach. Once humans can design machines that are smarter than we are, 
-                by definition they'll be able to design machines which are smarter than they are, which can design machines smarter than they are, and so on in a 
-                feedback loop so tiny that it will smash up against the physical limitations for intelligence in a comparatively lightning-short amount of time. 
-                If multiple competing entities were likely to do that at once, we would be super-doomed. But the sheer speed of the cycle makes it possible that 
-                we will end up with one entity light-years ahead of the rest of civilization, so much so that it can suppress any competition - including competition 
-                for its title of most powerful entity - permanently. In the very near future, we are going to lift something to Heaven. It might be Moloch. But it 
-                might be something on our side. If it's on our side, it can kill Moloch dead."
         />
         <Book
           title="The Brothers Karmazov"
